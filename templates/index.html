@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Hello World!</h1>
+    </div>
+    <div class="body">
+        <p>Page loaded at {{ moment(current_time).format('LLL') }}.</p>
+        <p>That was {{ moment(current_time).fromNow(refresh=True) }}.</p>
+    </div>
+</div>
+{% endblock %}
